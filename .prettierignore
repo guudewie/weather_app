@@ -1,0 +1,6 @@
+/dist,
+node_modules,
+main.js,
+package.json,
+package-lock.json,
+webpack.config.js,

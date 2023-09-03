@@ -1,3 +1,9 @@
 import weather from "./modules/api"
 
-console.log(weather.getData("LIN"))
+const form = document.querySelector("form");
+const input = document.querySelector("input.location");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    weather.getData(input.value)
+})

@@ -21,6 +21,11 @@ div.app-container {
   justify-content: space-around;
 }
 
+.location {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
 .condition {
   font-size: 10rem;
 }
@@ -84,12 +89,18 @@ button#weathersearch {
 .feelslike {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .feelslike.number {
-    font-size: 10rem;
+    font-size: 15rem;
 }
 
 .feelslike.sign {
     font-size: 3rem;
+}
+
+.feelslike.boiler {
+    transform: rotate(-90deg);
+    font-size: 1.4rem;
 }

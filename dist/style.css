@@ -65,6 +65,8 @@ input.location {
     border-radius: 1rem;
     width: 12rem;
     height: 1.3rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 form {

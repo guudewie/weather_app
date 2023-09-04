@@ -1,9 +1,8 @@
-import weather from "./modules/api";
+import dom from "./modules/dom";
 
-const form = document.querySelector("form");
-const input = document.querySelector("input.location");
+window.addEventListener("load", () => {
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  weather.getData(input.value);
+    dom.searchListener();
+    dom.tempUnitListner()
+
 });

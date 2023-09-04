@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/api */ \"./src/modules/api.js\");\n\n\nconst form = document.querySelector(\"form\");\nconst input = document.querySelector(\"input.location\");\n\nform.addEventListener(\"submit\", (e) => {\n    e.preventDefault()\n    _modules_api__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getData(input.value)\n})\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/api */ \"./src/modules/api.js\");\n\n\nconst form = document.querySelector(\"form\");\nconst input = document.querySelector(\"input.location\");\n\nform.addEventListener(\"submit\", (e) => {\n  e.preventDefault();\n  _modules_api__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getData(input.value);\n});\n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nconst weather = (() => {\n\n    async function getData(location) {\n        const url = `https://api.weatherapi.com/v1/forecast.json?key=e069f2b106c04ce29a1142633233108&q=${location}`;\n\n        const response = await fetch(url);\n        const data = await response.json();\n\n        console.log(data)\n        return data\n    }\n\n\n    return {\n        getData\n    }\n\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (weather);\n\n//# sourceURL=webpack://weather_app/./src/modules/api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst weather = (() => {\n  async function getData(location) {\n    const url = `https://api.weatherapi.com/v1/forecast.json?key=e069f2b106c04ce29a1142633233108&q=${location}`;\n\n    const response = await fetch(url);\n    const data = await response.json();\n\n    console.log(data);\n    return data;\n  }\n\n  return {\n    getData,\n  };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (weather);\n\n\n//# sourceURL=webpack://weather_app/./src/modules/api.js?");
 
 /***/ })
 

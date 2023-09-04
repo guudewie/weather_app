@@ -55,9 +55,12 @@ const dom = (() => {
     }
 
 
+
+
     return {
-        searchListener,
-        tempUnitListner
+       searchListener,
+       tempUnitListner,
+       populateApp
     }
 
 })();

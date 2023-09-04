@@ -23,7 +23,7 @@ const dom = (() => {
     function tempUnitListner() {
         tempButton.addEventListener("click", () => {
             
-            feelsLike.textContent = Math.round(switchTemp(feelsLike.textContent));
+            feelsLike.textContent = Math.round(switchTemp(feelsLike.textContent)*10)/10;
             
             if (tempUnit) {
                 feelsLikeUnit.textContent = "F"

@@ -7,16 +7,13 @@ const weather = (() => {
             const response = await fetch(url);
             const data = await response.json();
 
-            if (data.error) {
-                errorDom.textContent = data.error.message;
-                return null;
-            }
+            if (data.error) throw new Error(data.error.message);
 
             errorDom.textContent = "";
 
             return data;
         } catch (error) {
-            alert("There seems to be an issue. Let´s try it one more time.");
+            errorDom.textContent = error;
             return null;
         }
     }

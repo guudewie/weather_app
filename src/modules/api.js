@@ -8,7 +8,7 @@ const weather = (() => {
       const data = await response.json();
 
       if (data.error) {
-        alert(data.error.message)
+        errorDom.textContent= data.error.message
         return null
       }
 

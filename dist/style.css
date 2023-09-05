@@ -107,3 +107,8 @@ button#weathersearch {
     transform: rotate(-90deg);
     font-size: 1.4rem;
 }
+
+.error {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
